@@ -1,5 +1,5 @@
 load("@rules_python//python:defs.bzl", "py_binary")
-load("@py_reqs_bzl_rules//:requirements.bzl", "requirement")
+load("@py_reqs_rules_df//:requirements.bzl", "requirement")
 
 py_binary(
     name = "hello_absl",

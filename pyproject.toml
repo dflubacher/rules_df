@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bzl_rules"
+name = "rules_df"
 version = "0.1.0"
 description = "Bazel rules."
 authors = ["df"]

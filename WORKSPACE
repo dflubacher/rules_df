@@ -1,4 +1,4 @@
-workspace(name = "com_df_bzl_rules")
+workspace(name = "com_rules_df")
 
 load("//defs:deps.bzl", deps_repos = "deps_repositories")
 
@@ -19,12 +19,12 @@ poetry_lock(
 
 # Parse requirements_lock.txt
 py_reqs_load(
-    name = "py_reqs_bzl_rules",
+    name = "py_reqs_rules_df",
     reqs_txt = "@poetry_deps//:requirements_lock.txt",
 )
 
 # Lazily install requirements.
-load("@py_reqs_bzl_rules//:requirements.bzl", "install_deps")
+load("@py_reqs_rules_df//:requirements.bzl", "install_deps")
 
 install_deps()
 
