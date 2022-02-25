@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "bzl_rules"
+version = "0.1.0"
+description = "Bazel rules."
+authors = ["df"]
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+pyyaml = "^6.0.0"
+absl-py = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+black = "^22.1.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length=79
+include = '\\.pyi?$'
+exclude = '''
+/(
+    \\.git
+  | \\.hg
+  | \\.mypy_cache
+  | \\.tox
+  | \\.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
