@@ -34,7 +34,6 @@ def _poetry_impl(ctx):
     ctx.file("BUILD", "")
 
 poetry_lock = repository_rule(
-    # name = "my_poetry",
     implementation = _poetry_impl,
     local = True,
     attrs = {

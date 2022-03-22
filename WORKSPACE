@@ -33,9 +33,6 @@ install_deps()
 # https://bazelbuild.github.io/rules_rust/
 # -----------------------------------------------------------------------------
 # https://bazelbuild.github.io/rules_rust/#setup
-# - The version referenced in the above link (2022-02-23, commit d8238877c0e552639d3e057aadd6bfcf37592408)
-#   does not contain the symbols indicated. Therefore a more recent version is
-#   included in the //defs:deps.bzl file.
 load("@rules_rust//rust:repositories.bzl", "rules_rust_dependencies", "rust_register_toolchains")
 
 rules_rust_dependencies()
